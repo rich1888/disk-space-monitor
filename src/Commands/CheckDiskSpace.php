@@ -41,7 +41,7 @@ class CheckDiskSpace extends Command
 
 		$availablePercentage = ($freeSpace / $totalSpace) * 100;
 
-		if ($availablePercentage <= $threshold) {
+		if ($availablePercentage <= 100 - $threshold) {
 			Log::critical($msg);
 
 			if ($email) {
