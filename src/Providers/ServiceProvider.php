@@ -2,13 +2,12 @@
 
 namespace Rich1888\DiskSpaceMonitor\Providers;
 
-use Aero\Common\Providers\ModuleServiceProvider;
-use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Routing\Router;
+use Illuminate\Console\Scheduling\Schedule;;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Rich1888\DiskSpaceMonitor\Commands\CheckDiskSpace;
 
 
-class ServiceProvider extends ModuleServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     public function register()
     {
