@@ -1,0 +1,27 @@
+{
+    "name": "rich1888/disk-space-monitor",
+    "description": "Check the available disk space on the server, and alert when a threshold is met.",
+    "authors": [
+        {
+            "name": "Richard Shipley",
+            "email": "richard.shipley@techquity.co.uk"
+        }
+    ],
+    "require": {
+        "aerocommerce/core": "^0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rich1888\\DiskSpaceMonitor\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel" : {
+            "providers": [
+                "Rich1888\\DiskSpaceMonitor\\Providers\\ServiceProvider"
+            ]
+        }
+    }
+}
